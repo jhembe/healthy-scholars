@@ -1,0 +1,30 @@
+/* gallery.css */
+
+/* Add custom styles for the gallery here */
+
+.gallery-section {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+
+.gallery-section .container {
+    text-align: center;
+}
+
+.gallery-section .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.gallery-section a {
+    text-decoration: none;
+}
+
+.gallery-section img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-section img:hover {
+    transform: scale(1.1);
+}
