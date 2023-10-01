@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Hero Section Styles */
+/* .hero {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+} */
+
+/* .hero{
+
+    height: 50vh;
+    background-color: red;
+}
+
+.hero .container{
+    height: 90%;
+    background-color: blue;
+}
+
+.carousel{
+    background-color: green;
+    height: 100%;
+} */
+
+section.carousel-section{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+div.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border-radius: .5em;
+    /* border: 2px solid black; */
+}
+div.carousel-item img{
+    width: 85%;
+    border-radius: .5em;
+}   
+
+/* Timeline Section Styles */
+.timeline-section {
+    background-color: #f1f1f1;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-left: 2px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 24px;
+}
+
+.timeline-text {
+    font-size: 18px;
+}
+
+/* Mission Card Styles */
+.mission-card {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+.mission-card .card-body {
+    text-align: center;
+}
+
+.mission-card h3 {
+    font-size: 24px;
+}
+
+.mission-card p {
+    font-size: 18px;
+}
+
+/* Programs Section Styles */
+.programs-section {
+    padding: 50px 0;
+}
+
+.programs-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Program Card Styles */
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .timeline-item {
+        border-left: none;
+        border-top: 2px solid #3498db;
+    }
+}
