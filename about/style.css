@@ -60,10 +60,12 @@ div.carousel{
     border-radius: .5em;
     /* border: 2px solid black; */
 }
+
 div.carousel-item img{
-    width: 85%;
-    border-radius: .5em;
-}   
+    width: 100%;
+    border-radius: .5em;    
+}
+
 
 /* Timeline Section Styles */
 .timeline-section {
@@ -142,6 +144,12 @@ footer {
     padding: 20px 0;
 }
 
+
+div.card{
+    background-color: #59adfc;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero h1 {
@@ -155,5 +163,22 @@ footer {
     .timeline-item {
         border-left: none;
         border-top: 2px solid #3498db;
+    }
+
+
+    div.carousel{
+        width: 90%;
+        height: 50%;
+
+        /* border: 2px solid black; */
+    }
+
+    div.carousel-item{
+        /* border: 2px solid black; */
+    }
+
+    div.carousel-item img{
+        width: 100%;
+        /* border: 2px solid black; */
     }
 }
