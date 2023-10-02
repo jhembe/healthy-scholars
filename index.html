@@ -264,7 +264,7 @@
                     <h2>Contact</h2>
                     <ul class="list-unstyled">
                         <li><strong>Registration Number:</strong> 1483</li>
-                        <li><strong>P.O.BOX:</strong> 25158<br>Dar Es Salaam, Tanzania</li>
+                        <li><strong>P.O.BOX:</strong> 25158<br>Dar Es Salaam</li>
                         <li><strong><i class="fas fa-phone"></i></strong> <a href="tel:+255782832773">+255782832773</a> / <a href="tel:+255712297166">+255712297166</a></li>
                         <li><strong><i class="fas fa-envelope"></i></strong> <a href="mailto:healthyscholars6@gmail.com">healthyscholars6@gmail.com</a></li>
                     </ul>
@@ -287,6 +287,35 @@
         </div>
     </footer>
 
+
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Show or hide the button based on the scroll position
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll-to-top i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+                $('#scroll-to-top').fadeIn();
+            } else {
+                $('#scroll-to-top i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                $('#scroll-to-top').fadeOut();
+            }
+        });
+    
+        // Scroll to top when the button is clicked
+        $('#scroll-to-top').click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
+    });
+    </script>
+    
 
 </html>

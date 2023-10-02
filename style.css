@@ -1,7 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400&family=Lobster&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Gabarito:wght@400;500;600;700&family=Lato:wght@300;400&family=Lobster&family=Pacifico&display=swap');
 
 .hero {
     /* background-color: #e74c3c; */
@@ -45,7 +44,9 @@ div.carousel-item img{
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-family: 'Gabarito';
+    /* font-size: 36px; */
+    font-size: 12px;
 }
 
 .hero p{
@@ -165,6 +166,33 @@ div.address p{
     /* text-align: left; */
 }
 
+/* Add this CSS to your style.css file or within a <style> tag in the HTML */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    background-color: #333; /* Dark color */
+    color: #fff; /* Text color */
+    width: 40px; /* Width of the div */
+    height: 40px; /* Height of the div */
+    border-radius: 50%; /* Make it rounded */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+.scroll-to-top i {
+    font-size: 24px; /* Adjust the icon size */
+}
+
+/* Hover effect (optional) */
+.scroll-to-top:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -207,5 +235,10 @@ div.address p{
         margin: 40px 0 40px;
     }
 
-    /* Add more responsive styles here */
+    .scroll-to-top {
+        width: 35px; 
+        height: 35px; 
+
+    }
+
 }
