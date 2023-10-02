@@ -1,8 +1,8 @@
-/* style.css */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400&family=Lobster&family=Pacifico&display=swap');
 
-/* Add custom styles here */
 
-/* Style for the Hero Section */
 .hero {
     /* background-color: #e74c3c; */
     color: white;
@@ -15,7 +15,12 @@
 }
 
 
+img.welcome{
+    width: 100%;
+}
+
 .navbar-brand{
+    font-family: 'Lobster';
     font-weight: bold;
 }
 div.hero-left{
@@ -41,7 +46,13 @@ div.carousel-item img{
 
 .hero h1 {
     font-size: 36px;
+}
 
+.hero p{
+    font-family: 'Dancing Script';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 /* Style for the About Section */
@@ -62,6 +73,11 @@ div.card{
     height: 205px
 }
 
+div.card{
+    overflow: scroll;
+    padding: 0 0 10px;
+}
+
 div.card-body h3,p{
     color: black;
 }
@@ -77,6 +93,11 @@ div.card-body h3,p{
 /* Style for the Contact Section */
 .contact {
     padding: 100px 0;
+}
+
+.philosophy h2,.values h2,.welcome h2{
+    font-family: 'Lobster';
+
 }
 
 /* Style for the Footer */
@@ -129,6 +150,21 @@ div.photo-thumb img{
     margin: 0;
 }
 
+footer{
+    /* font-family: 'Open Sans'; */
+    /* font-size: 16px; */
+    font-weight: 400;
+}
+
+footer p{
+    color: white;
+}
+
+
+div.address p{
+    /* text-align: left; */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -167,6 +203,9 @@ div.photo-thumb img{
         margin: 0 0 50px;
     }
 
+    footer .socials{
+        margin: 40px 0 40px;
+    }
 
     /* Add more responsive styles here */
 }
